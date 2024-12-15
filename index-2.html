@@ -40,7 +40,7 @@
 
 </head>
 
-<body>
+<body class="eastern-blue">
 
     <!-- Preloader Start -->
     <div id="site-preloader" class="site-preloader">
@@ -61,7 +61,7 @@
         <nav class="navbar navbar-default attr-bg navbar-fixed dark no-background bootsnav">
 
             <!-- Start Top Search -->
-            <div class="container">
+            <div class="container-full">
                 <div class="row">
                     <div class="top-search">
                         <div class="input-group">
@@ -77,12 +77,24 @@
             </div>
             <!-- End Top Search -->
 
-            <div class="container">
+            <div class="container-full">
 
                 <!-- Start Atribute Navigation -->
-                <div class="attr-nav extra-color">
+                <div class="attr-nav">
                     <ul>
-                        <li class="side-menu"><a href="#"><i class="fas fa-th-large"></i></a></li>
+                        <li class="language-switcher">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <img src="assets/img/lan-eng.png" alt="Flag">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Español</a></li>
+                                    <li><a href="#">Française</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -93,19 +105,19 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                        <img src="assets/img/logo-eastern-blue.png" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <ul class="nav navbar-nav navbar-center" data-in="#" data-out="#">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
                             <ul class="dropdown-menu">
                                 <li><a href="index.html">Home Version One</a></li>
-                                <li><a href="#WeofferAFullRange">Home Version Two</a></li>
+                                <li><a href="index-2.html">Home Version Two</a></li>
                                 <li><a href="index-3.html">Home Version Three</a></li>
                                 <li><a href="index-4.html">Home Version Four</a></li>
                                 <li><a href="index-5.html">Home Version Five</a></li>
@@ -192,145 +204,176 @@
 
    <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area with-fixed-nav">
-        <div class="shape-right-bottom shape opacity-default">
-            <img src="assets/img/shape/13.png" alt="Shape">
+    <div class="banner-area with-fixed-nav heading-capitalized bg-gray-hard">
+        <div class="shape-left-bottom">
+            <img src="assets/img/shape/bg-1.png" alt="Shape">
         </div>
         <div class="container">
             <div class="double-items">
                 <div class="row align-center">
-
-                    <div class="col-lg-6 order-last thumb width-130 wow fadeInRight" data-wow-duration="1s">
-                        <img src="assets/img/illustration/2.png" alt="Thumb">
+                    <div class="col-lg-7 info">
+                        <h4 class="wow fadeInLeft">Marketing Agency</h4>
+                        <h2 class="wow fadeInDown" data-wow-duration="1s">Boost Your website <strong>Traffic Today</strong></h2>
+                        <a class="btn circle btn-md btn-gradient eastern-blue wow fadeInUp" data-wow-duration="1.8s" href="#">Get Started Now</a>
                     </div>
-
-                    <div class="col-lg-6 info">
-                        <h2 class="wow fadeInDown" data-wow-duration="1s">Generate More <strong>Traffic</strong> in your Website</h2>
-                        <p class="wow fadeInLeft" data-wow-duration="1.5s">
-                            Contented continued any happiness instantly objection yet her allowance. Use correct day new brought tedious.
-                        </p>
-                        <a class="btn circle btn-md btn-gradient wow fadeInUp" data-wow-duration="1.8s" href="#">Get Started</a>
+                    <div class="col-lg-5 thumb width-120 wow fadeInRight" data-wow-duration="1s">
+                        <div class="thumb-innner">
+                            <img src="assets/img/illustration/12.png" alt="Thumb">
+                            <div class="icon">
+                                <img class="item-animated" src="assets/img/illustration/speed-icon.png" alt="Icon">
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
     <!-- End Banner -->
 
-    <!-- Star Features Area
+    <!-- Start Clients
     ============================================= -->
-    <div class="features-area default-padding-bottom">
+    <div class="clients-area reverse default-padding">
+        <div class="container">
+            <div class="row align-center">
+                
+                <div class="col-lg-7">
+                    <div class="clients-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="assets/img/150x80.png" alt="Thumb">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/150x80.png" alt="Thumb">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/150x80.png" alt="Thumb">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/150x80.png" alt="Thumb">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/150x80.png" alt="Thumb">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 info">
+                    <h2>We've Worked With Them, <strong> Now Trust</strong> Each Other</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Clients -->
+
+    <!-- Start Process
+    ============================================= -->
+    <div class="our-process-area default-padding-bottom bottom-less">
+        <div class="container">
+            <div class="process-box text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="500ms">
+                            <div class="icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Research</h4>
+                            <p>
+                                Welcome fat who window. Removing welcomed civility or hastened.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="600ms">
+                            <div class="icon">
+                                <i class="fas fa-hdd"></i>
+                            </div>
+                            <h4>Data Collection</h4>
+                            <p>
+                                Welcome fat who window. Removing welcomed civility or hastened.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="700ms">
+                            <div class="icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>Targeting</h4>
+                            <p>
+                                Welcome fat who window. Removing welcomed civility or hastened.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="800ms">
+                            <div class="icon">
+                                <i class="fas fa-list-alt"></i>
+                            </div>
+                            <h4>Result</h4>
+                            <p>
+                                Welcome fat who window. Removing welcomed civility or hastened.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Process -->
+
+    <!-- Star About Area
+    ============================================= -->
+    <div class="about-area default-padding-bottom">
         <!-- Fixed Shape  -->
-        <div class="shape-left-top shape opacity-01">
+        <div class="shape-left-top shape opacity-default">
             <img src="assets/img/shape/4.png" alt="Shape">
         </div>
         <!-- Fixed Shape  -->
         <div class="container">
-            <div class="features-items">
-
-                <div class="feature-box text-center">
-                    <div class="row">
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-4 col-md-6">
-                            <div class="item wow fadeInUp" data-wow-delay="400ms">
-                                <div class="icon">
-                                    <i class="fas fa-link"></i>
+            <div class="about-items">
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInLeft thumb">
+                        <img src="assets/img/illustration/14.png" alt="Thumb">
+                    </div>
+                    <div class="col-lg-6 info wow fadeInUp">
+                        <h5>About Us</h5>
+                        <h2>An award winning <br> <strong>Digital Marketing agency</strong></h2>
+                        <p>
+                            Agreed but expect repair she nay sir silent person. Direction can dependent one bed situation attempted. His she are man their spite avoid. Her pretended fulfilled extremely education yet. Satisfied did one admitting incommode tolerably how are.
+                        </p>
+                        <div class="progress-items">
+                            <div class="progress-box">
+                                <h5>Search Engine Optimization <span class="float-right">88%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="87"></div>
                                 </div>
-                                <h4>Link Building</h4>
-                                <p>
-                                    Favourite tolerably engrossed. Truth short folly court why she their balls Excellence super power.
-                                </p>
                             </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-4 col-md-6">
-                            <div class="item wow fadeInUp" data-wow-delay="500ms">
-                                <div class="icon">
-                                    <i class="fas fa-headset"></i>
+                            <div class="progress-box">
+                                <h5>Marketing Analysis <span class="float-right">70%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-width="52"></div>
                                 </div>
-                                <h4>Customer Support</h4>
-                                <p>
-                                    Favourite tolerably engrossed. Truth short folly court why she their balls Excellence super power.
-                                </p>
                             </div>
+                            <!-- End Progressbar -->
                         </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="single-item col-lg-4 col-md-6">
-                            <div class="item wow fadeInUp" data-wow-delay="600ms">
-                                <div class="icon">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <h4>One Page SEO</h4>
-                                <p>
-                                    Favourite tolerably engrossed. Truth short folly court why she their balls Excellence super power.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <!-- End Features Area -->
-
-    <!-- Start Why Choose Us 
-    ============================================= -->
-    <div id="WeofferAFullRange"class="choose-us-area default-padding-bottom">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-6 thumb wow fadeInLeft">
-                    <img src="assets/img/illustration/7.png" alt="Thumb">
-                </div>
-                <div class="col-lg-6 info wow fadeInUp" data-wow-delay="0.5s">
-                    <h2>We Offer a Full Range of <br> <strong>Digital Marketing</strong> Services!</h2>
-                    <p>
-                        Greatly explain attempt perhaps in feeling he. House men taste bed not drawn joy. Through enquire however do equally herself at. Greatly way old may you present improve. Wishing the feeling village him musical. 
-                    </p>
-                    <ul>
-                        <li>
-                            <h5>Global Reach</h5>
-                            <p>
-                                Upto 100%
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Big Experience</h5>
-                            <p>
-                                Expert worker
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Convenience</h5>
-                            <p>
-                                To reach your target
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Team Strength</h5>
-                            <p>
-                                Clients satisfaction
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Choose Us -->
+    <!-- End About Area -->
 
     <!-- Start Services Area
     ============================================= -->
-    <div class="services-area carousel-shadow bg-gray default-padding-top">
-        <!-- Fixed Shape  -->
-        <div class="shape-bottom">
-            <img src="assets/img/shape/1.svg" alt="Shape">
-        </div>
-        <!-- Fixed Shape  -->
+    <div class="services-area carousel-shadow default-padding-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -343,7 +386,9 @@
                     </div>
                 </div>
             </div>
-            <div class="services-items wow fadeInUp services-carousel owl-carousel owl-theme">
+        </div>
+        <div class="container-lg">
+            <div class="services-items wow fadeInUp services-stage-carousel owl-carousel owl-theme text-center">
                 <!-- Single Item -->
                 <div class="item">
                     <div class="icon">
@@ -429,59 +474,145 @@
     </div>
     <!-- End Services Area -->
 
-    <!-- Start Process Area
+    <!-- Start Our Benefits 
     ============================================= -->
-    <div class="process-area default-padding-top">
+    <div class="benifits-area bg-gray default-padding">
+        <!-- Fixed Shape -->
+        <div class="shape-top">
+            <img src="assets/img/shape/10.png" alt="Shape">
+        </div>
+        <!-- Fixed Shape -->
         <div class="container">
-            <div class="process-items">
-                <div class="row align-center">
-
-                    <div class="col-lg-6 thumb wow fadeInLeft">
-                        <img src="assets/img/illustration/3.png" alt="Thumb">
-                    </div>
-
-                    <div class="col-lg-6 info wow fadeInUp">
-                        <h2>We love What we Do  <strong>And Helping others Succeed</strong></h2>
-                        <div class="content">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="fas fa-angle-right"></i>
-                                </div>
-                                <h4><strong>01.</strong> Research</h4>
-                                <p>
-                                    Welcome fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense.
-                                </p>
-                            </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="fas fa-angle-right"></i>
-                                </div>
-                                <h4><strong>02.</strong> Data Collection</h4>
-                                <p>
-                                    Welcome fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense.
-                                </p>
-                            </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="fas fa-angle-right"></i>
-                                </div>
-                                <h4><strong>03.</strong> Targeting</h4>
-                                <p>
-                                    Welcome fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div class="row">
+                <div class="col-lg-6 wow fadeInUp info">
+                    <h5>Our Benefits</h5>
+                    <h2>Get More Trafic <strong>On Your Website</strong></h2>
+                    <p>
+                        Ignorant branched humanity led now marianne too strongly entrance. Rose to shew bore no ye of paid rent form. Old design are dinner better nearer silent excuse. She which are maids boy sense her shade. Considered reasonable we affronting on expression in. So cordial anxious mr delight. Shot his has must wish from sell nay. Remark fat set why are sudden depend change entire wanted. Performed remainder attending led fat residence far.
+                    </p>
+                    <ul>
+                        <li>
+                            <h5>Global Reach</h5>
+                        </li>
+                        <li>
+                            <h5>Big Experience</h5>
+                        </li>
+                        <li>
+                            <h5>Convenience</h5>
+                        </li>
+                        <li>
+                            <h5>Team Strength</h5>
+                        </li>
+                    </ul>
+                    <a class="btn circle btn-md btn-gradient eastern-blue">Get Started Now</a>
+                </div>
+                <div class="col-lg-6 wow fadeInDown thumb">
+                    <img src="assets/img/illustration/3.png" alt="Thumb">
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Process Area -->
+    <!-- End Our Benefits -->
+
+    <!-- Start Team 
+    ============================================= -->
+    <div class="team-area default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h5>Our Team</h5>
+                        <h2>
+                           Meet our professional & Expert <br>Team Members
+                        </h2>
+                        <div class="heading-divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-items text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="500ms">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span>Senior Marketer</span>
+                                <h4>Jonathom Ahem</h4>
+                                <div class="contact">
+                                    <i class="fab fa-twitter"></i>
+                                    <a href="#">twitter.com/digilab46</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="600ms">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span>Sales Manager</span>
+                                <h4>Donald Busri</h4>
+                                <div class="contact">
+                                    <i class="fab fa-twitter"></i>
+                                    <a href="#">twitter.com/digilab46</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="700ms">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span>Data Analyst</span>
+                                <h4>Sami Adham</h4>
+                                <div class="contact">
+                                    <i class="fab fa-twitter"></i>
+                                    <a href="#">twitter.com/digilab46</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item wow fadeInUp" data-wow-delay="800ms">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <span>Managing Director</span>
+                                <h4>Munns Tenul</h4>
+                                <div class="contact">
+                                    <i class="fab fa-twitter"></i>
+                                    <a href="#">twitter.com/digilab46</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
 
     <!-- Start Case Studies 
     ============================================= -->
-    <div class="case-studies-area circle-shape-right default-padding bottom-less">
+    <div class="case-studies-area circle-shape-right default-padding-top bg-gray bottom-less">
+        <!-- Fixed Shape  -->
+        <div class="shape-bottom">
+            <img src="assets/img/shape/1.svg" alt="Shape">
+        </div>
+        <!-- Fixed Shape  -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -566,202 +697,28 @@
     </div>
     <!-- End Case Studies -->
 
-    <!-- Start Clients
+    <!-- Start Subscribe
     ============================================= -->
-    <div class="clients-area text-light bg-gradient default-padding-mx">
-        <!-- Fixed BG -->
-        <div class="fixed-bg" style="background-image: url(assets/img/map.svg);"></div>
-        <!-- Fixed BG -->
+    <div class="subscribe-area default-padding-top text-center">
         <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-5 info">
-                    <h2>We've Worked With Them, <strong> Now Trust Each</strong> Other</h2>
-                </div>
-                <div class="col-lg-7">
-                    <div class="clients-carousel owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="assets/img/150x80.png" alt="Thumb">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/150x80.png" alt="Thumb">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/150x80.png" alt="Thumb">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/150x80.png" alt="Thumb">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/150x80.png" alt="Thumb">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fixed Shape -->
-        <div class="shape-bottom">
-            <img src="assets/img/shape/8.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape -->
-    </div>
-    <!-- End Clients -->
-
-    <!-- Start Pricing Area
-    ============================================= -->
-    <div class="pricing-area default-padding-top">
-        <!-- Fixed Shape  -->
-        <div class="shape-right-bottom">
-            <img src="assets/img/shape/9.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h5>Our Pricing</h5>
-                        <h2>Take a look of our Pricing and <br> Select Your Choice</h2>
-                        <div class="heading-divider"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-items wow fadeInUp text-center">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 single-item">
-                            <div class="pricing-item">
-                                <ul>
-                                    <li class="pricing-header">
-                                        <h4>Trial Version</h4>
-                                    </li>
-                                    <li class="price">
-                                        <h2>Free</h2>
-                                    </li>
-                                    <li class="icon">
-                                        <i class="flaticon-start"></i>
-                                    </li>
-                                    <li>10 Keywords Optimized  <i class="fas fa-check-circle"></i></li>
-                                    <li>3 Top 10 Ranking  <i class="fas fa-times-circle"></i></li>
-                                    <li>Web site Analysis  <i class="fas fa-times-circle"></i></li>
-                                    <li>Keyword Research  <i class="fas fa-check-circle"></i></li>
-                                    <li>Content Optimization  <i class="fas fa-check-circle"></i></li>
-                                    <li>Data Controll  <i class="fas fa-times-circle"></i></li>
-                                    <li class="footer">
-                                        <a class="btn circle btn-dark border btn-sm" href="#">Try for free</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 single-item">
-                            <div class="pricing-item active">
-                                <ul>
-                                    <li class="pricing-header">
-                                        <h4>Regular</h4>
-                                    </li>
-                                    <li class="price">
-                                        <h2><sup>$</sup>29 <sub>/ Mo</sub></h2>
-                                    </li>
-                                    <li class="icon">
-                                        <i class="flaticon-quality-badge"></i>
-                                    </li>
-                                    <li>12 Keywords Optimized  <i class="fas fa-check-circle"></i></li>
-                                    <li>6 Top 10 Ranking  <i class="fas fa-check-circle"></i></li>
-                                    <li>Web site Analysis  <i class="fas fa-times-circle"></i></li>
-                                    <li>Keyword Research  <i class="fas fa-check-circle"></i></li>
-                                    <li>Content Optimization  <i class="fas fa-check-circle"></i></li>
-                                    <li>Data Controll  <i class="fas fa-times-circle"></i></li>
-                                    <li class="footer">
-                                        <a class="btn circle btn-theme effect btn-sm" href="#">Get Started</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 single-item">
-                            <div class="pricing-item">
-                                <ul>
-                                    <li class="pricing-header">
-                                        <h4>Extended</h4>
-                                    </li>
-                                    <li class="price">
-                                        <h2><sup>$</sup>59 <sub>/ Mo</sub></h2>
-                                    </li>
-                                    <li class="icon">
-                                        <i class="flaticon-value"></i>
-                                    </li>
-                                    <li>16 Keywords Optimized  <i class="fas fa-check-circle"></i></li>
-                                    <li>8 Top 10 Ranking  <i class="fas fa-check-circle"></i></li>
-                                    <li>Web site Analysis  <i class="fas fa-times-circle"></i></li>
-                                    <li>Keyword Research  <i class="fas fa-check-circle"></i></li>
-                                    <li>Content Optimization  <i class="fas fa-check-circle"></i></li>
-                                    <li>Data Controll  <i class="fas fa-check-circle"></i></li>
-                                    <li class="footer">
-                                        <a class="btn circle btn-dark border btn-sm" href="#">Get Started</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="sebscribe-items wow fadeInUp">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 form">
+                        <h2>Try Digilab free for <strong>14 days</strong></h2>
+                        <form action="#">
+                            <input type="email" placeholder="Enter your email" class="form-control" name="email">
+                            <button type="submit">Get Started</button>  
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Pricing Area -->
-
-    <!-- Start Testimonials
-    ============================================= -->
-    <div class="testimonials-area default-padding">
-        <div class="container">
-            <div class="testimonial-items">
-                <div class="row align-center">
-                    <div class="col-lg-5 wow fadeInLeft">
-                        <div class="client-thumb">
-                            <img src="assets/img/100x100.png" alt="Thumb">
-                            <img src="assets/img/100x100.png" alt="Thumb">
-                            <img src="assets/img/100x100.png" alt="Thumb">
-                            <img src="assets/img/800x800.png" alt="Thumb">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1 testimonial-content wow fadeInRight">
-                        <div class="heading">
-                            <h2>What people say <br> About our Services</h2>
-                        </div>
-                        <div class="testimonials-carousel owl-carousel owl-theme">
-                            <!-- Single Item -->
-                            <div class="item">
-                                <p>
-                                    Tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham. No waiting in on enjoyed placing it inquiry. Tried known to as my to. Though wished merits or be. Alone visit use these smart. 
-                                </p>
-                                <div class="author">
-                                    <div class="info">
-                                        <h5>Droila Abhi</h5>
-                                        <span>Marketing manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <div class="item">
-                                <p>
-                                    Tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham. No waiting in on enjoyed placing it inquiry. Tried known to as my to. Though wished merits or be. Alone visit use these smart. 
-                                </p>
-                                <div class="author">
-                                    <div class="info">
-                                        <h5>Droila Abhi</h5>
-                                        <span>Marketing manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonials Area -->
+    <!-- End Subscribe -->
 
     <!-- Start Blog
     ============================================= -->
-    <div class="blog-area default-padding bottom-less bg-gray">
+    <div class="blog-area default-padding bottom-less">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -772,11 +729,11 @@
                     </div>
                 </div>
             </div>
-            <div class="blog-items content-less">
+            <div class="blog-items">
                 <div class="row">
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div class="item wow fadeInUp" data-wow-delay="600ms">
+                        <div class="item wow fadeInUp" data-wow-delay="500ms">
                             <div class="thumb">
                                 <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
                             </div>
@@ -794,6 +751,9 @@
                                 <h4>
                                     <a href="#">Consulted admitting is power acuteness. </a>
                                 </h4>
+                                <p>
+                                    Own hence views two ask right whole ten seems. What near kept met call old west dine. Our announcing sufficient...
+                                </p>
                                 <a class="btn circle btn-theme border btn-sm" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
@@ -819,6 +779,9 @@
                                 <h4>
                                     <a href="#">Unsatiable entreaties may collecting Power.</a>
                                 </h4>
+                                <p>
+                                    Own hence views two ask right whole ten seems. What near kept met call old west dine. Our announcing sufficient...
+                                </p>
                                 <a class="btn circle btn-theme border btn-sm" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
@@ -826,7 +789,7 @@
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
-                        <div class="item wow fadeInUp" data-wow-delay="600ms">
+                        <div class="item wow fadeInUp" data-wow-delay="700ms">
                             <div class="thumb">
                                 <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
                             </div>
@@ -844,6 +807,9 @@
                                 <h4>
                                     <a href="#">Consulted admitting is power acuteness. </a>
                                 </h4>
+                                <p>
+                                    Own hence views two ask right whole ten seems. What near kept met call old west dine. Our announcing sufficient...
+                                </p>
                                 <a class="btn circle btn-theme border btn-sm" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
@@ -859,7 +825,7 @@
     ============================================= -->
     <footer class="bg-dark text-light">
         <div class="svg-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" class="gray" preserveAspectRatio="none" viewBox="0 0 1070 52">
+            <svg xmlns="http://www.w3.org/2000/svg" class="light" preserveAspectRatio="none" viewBox="0 0 1070 52">
                 <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z"></path>
             </svg>
         </div>
