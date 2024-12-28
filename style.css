@@ -470,7 +470,7 @@ input {
 }
 
 .default-padding-bottom {
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .default-padding.bottom-less {
@@ -5306,6 +5306,14 @@ i.fas.fa-envelope-open {
   background: #3B5998 none repeat scroll 0 0;
 }
 
+.sidebar-item.social-sidebar li.telegram a {
+  background: #3B5998 none repeat scroll 0 0;
+}
+
+.sidebar-item.social-sidebar li.messenger a {
+  background: #3B5998 none repeat scroll 0 0;
+}
+
 .sidebar-item.social-sidebar li.twitter a {
   background: #1DA1F2 none repeat scroll 0 0;
 }
@@ -5459,6 +5467,14 @@ i.fas.fa-envelope-open {
 }
 
 .blog-area .blog-content .share li.facebook a {
+  color: #3B5998;
+}
+
+.blog-area .blog-content .share li.telegram a {
+  color: #3B5998;
+}
+
+.blog-area .blog-content .share li.messenger a {
   color: #3B5998;
 }
 
@@ -5960,6 +5976,14 @@ form img.loader {
 }
 
 .login-area .social-login li.facebook a {
+  background: #3B5998 none repeat scroll 0 0;
+}
+
+.login-area .social-login li.telegram a {
+  background: #3B5998 none repeat scroll 0 0;
+}
+
+.login-area .social-login li.messenger a {
   background: #3B5998 none repeat scroll 0 0;
 }
 

@@ -724,6 +724,14 @@ nav.navbar.attr-border .attr-nav {
   background: #3b5998 none repeat scroll 0 0;
 }
 
+.bootsnav .side .widget.social li.telegram a {
+  background: #376de2 none repeat scroll 0 0;
+}
+
+.bootsnav .side .widget.social li.messenger a {
+  background: #ca0453 none repeat scroll 0 0;
+}
+
 .bootsnav .side .widget.social li.twitter a {
   background: #1da1f2 none repeat scroll 0 0;
 }

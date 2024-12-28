@@ -65,7 +65,7 @@
     <header id="home">
       <!-- Start Navigation -->
       <nav
-        class="navbar navbar-default attr-bg navbar-fixed dark no-background bootsnav"
+        class="navbar navbar-default navbar-sticky dark attr-border bootsnav"
       >
         <!-- Start Top Search -->
         <div class="container">
@@ -111,7 +111,12 @@
               <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="index.html">
-              <img src="assets/img/logo.png" class="logo" alt="Logo" />
+              <img
+                src="assets/img/logo-sail.png"
+                width="150"
+                class="logo"
+                alt="Logo"
+              />
             </a>
           </div>
           <!-- End Header Navigation -->
@@ -124,72 +129,100 @@
               data-out="fadeOutUp"
             >
               <li>
+                <a href="#">Trang chủ</a>
+              </li>
+              <li class="dropdown">
                 <a
-                  href="#"
-                  class="dropdown-toggle active"
-                  data-toggle="dropdown"
-                  >Trang chủ</a
+                  href="#thanh-lap-llc"
+                  onclick="scrollToDiv(event, this.getAttribute('href'))"
+                  >Thành lập LLC</a
                 >
               </li>
               <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                <a
+                  href="#gioi-thieu"
+                  onclick="scrollToDiv(event, this.getAttribute('href'))"
                   >Giới thiệu</a
                 >
               </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  >Dịch vụ</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a href="services.html">Tư vấn thành lập LLC</a></li>
-                  <li>
-                    <a href="services-2.html">Tư vấn các vấn đề về Thuế</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="blog.html">Blog</a></li>
+              <!-- <li><a href="blog.html">Blog</a></li> -->
               <li>
-                <a href="contact.html">Liên hệ</a>
+                <a
+                  href="#contact-area"
+                  onclick="scrollToDiv(event, this.getAttribute('href'))"
+                  >Liên hệ</a
+                >
               </li>
+
+              <script>
+                function scrollToDiv(event, href) {
+                  event.preventDefault();
+                  const targetId = href.replace("#", "");
+                  const targetDiv = document.getElementById(targetId);
+                  if (!targetDiv) return;
+
+                  const offset = 180;
+                  const elementPosition = targetDiv.getBoundingClientRect().top;
+                  const offsetPosition =
+                    elementPosition + window.pageYOffset - offset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+              </script>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
         </div>
 
         <!-- Start Side Menu -->
-        <!-- <div class="side">
-                <a href="#" class="close-side"><i class="ti-close"></i></a>
-                <div class="widget">
-                    <h4 class="title">Get in touch</h4>
-                    <p>
-                        Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
-                    </p>
-                    <a href="#" class="btn btn-theme effect btn-sm" data-animation="animated slideInUp">Consultation</a>
-                </div>
-                <div class="widget">
-                    <h4 class="title">Additional Links</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-                <div class="widget social">
-                    <h4 class="title">Connect With Us</h4>
-                    <ul class="link">
-                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-            </div> -->
+        <div class="side">
+          <a class="close-side"><i class="ti-close"></i></a>
+          <div class="widget">
+            <h4 class="title">Sail Agency</h4>
+            <p>
+              Sail Agency hỗ trợ doanh nghiệp vừa và nhỏ tại Việt Nam vươn tầm
+              quốc tế với các giải pháp toàn diện trong thành lập công ty, mở
+              tài khoản ngân hàng, tư vấn xử lý các vấn đề về thuế, thủ tục và
+              giấy tờ pháp lý hằng năm tại Hoa Kỳ.
+            </p>
+          </div>
+          <!-- <div class="widget">
+            <h4 class="title">Additional Links</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div> -->
+          <div class="widget social">
+            <h4 class="title">Liên hệ với chúng tôi</h4>
+            <ul class="link">
+              <li class="facebook">
+                <a href="https://www.facebook.com/sailagency" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="messenger">
+                <a href="https://www.m.me/sailagency" target="_blank">
+                  <i class="fab fa-facebook-messenger"></i>
+                </a>
+              </li>
+              <li class="telegram">
+                <a href="https://telegram.me/sailagency" target="_blank">
+                  <i class="fab fa-telegram-plane"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- End Side Menu -->
       </nav>
       <!-- End Navigation -->
     </header>
-    <!-- End Header -->
 
     <!-- Start Banner 
     ============================================= -->
@@ -226,7 +259,8 @@
               <a
                 class="btn circle btn-md btn-gradient wow fadeInUp"
                 data-wow-duration="1.8s"
-                href="#"
+                href="#contact-area"
+                onclick="scrollToDiv(event, this.getAttribute('href'))"
                 >Liên hệ ngay</a
               >
             </div>
@@ -303,7 +337,7 @@
 
     <!-- Start Why Choose Us 
     ============================================= -->
-    <div id="WeofferAFullRange" class="choose-us-area default-padding-bottom">
+    <div id="thanh-lap-llc" class="choose-us-area default-padding-bottom">
       <div class="container">
         <div class="row align-center">
           <div class="col-lg-6 thumb wow fadeInLeft">
@@ -432,6 +466,50 @@
     </div>
     <!-- End Process Area -->
 
+    <!-- Start Our Benefits 
+    ============================================= -->
+    <div id="gioi-thieu">
+      <div class="benifits-area reverse default-padding-bottom">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-lg-6 thumb wow fadeInLeft">
+              <img src="assets/img/illustration/44.png" alt="Thumb" />
+            </div>
+
+            <div class="col-lg-6 info wow fadeInDown">
+              <h5>Về chúng tôi</h5>
+              <h2>Giá trị cốt lõi <strong>Khách hàng là trung tâm</strong></h2>
+              <p>
+                Chúng tôi hoạt động và phát triển dựa trên nguyên tắc lấy khách
+                hàng làm trung tâm, luôn lắng nghe và đáp ứng nhu cầu của khách
+                hàng thông qua việc cung cấp các sản phẩm và dịch vụ chất lượng
+                cao. Chúng tôi cam kết hỗ trợ kịp thời và tùy chỉnh dịch vụ để
+                phù hợp với từng nhu cầu cụ thể. Thành công của bạn là ưu tiên
+                hàng đầu của chúng tôi, và đó là lý do chúng tôi không ngừng nỗ
+                lực để đảm bảo bạn có đầy đủ tài nguyên và sự hỗ trợ cần thiết
+                để đạt được mục tiêu của mình.
+              </p>
+              <ul>
+                <li>
+                  <h5>Chuyên nghiệp</h5>
+                </li>
+                <li>
+                  <h5>Linh hoạt</h5>
+                </li>
+                <li>
+                  <h5>Tận tâm</h5>
+                </li>
+                <li>
+                  <h5>Đáng tin cậy</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Benefits -->
+
     <!-- Star Faq
     ============================================= -->
     <div class="faq-area default-padding-bottom">
@@ -554,347 +632,27 @@
     </div>
     <!-- End Faq -->
 
-    <!-- Start Blog
-    ============================================= -->
-    <div class="blog-area default-padding-bottom bottom-less">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="site-heading text-center">
-              <h5>Blog</h5>
-              <h2>Một số thông tin hữu ích</h2>
-              <div class="heading-divider"></div>
-            </div>
-          </div>
-        </div>
-        <div class="blog-items content-less">
-          <div class="row">
-            <!-- Single Item -->
-            <div class="single-item col-lg-4 col-md-6">
-              <div class="item wow fadeInUp" data-wow-delay="600ms">
-                <div class="thumb">
-                  <a href="#"
-                    ><img src="assets/img/800x600.png" alt="Thumb"
-                  /></a>
-                </div>
-                <div class="info">
-                  <div class="tags">
-                    <a href="#">SEO</a>
-                    <a href="#">Analysis</a>
-                  </div>
-                  <div class="meta">
-                    <ul>
-                      <li><i class="fas fa-calendar-alt"></i> 18 Nov, 2020</li>
-                      <li>By <a href="#">Park Lee</a></li>
-                    </ul>
-                  </div>
-                  <h4>
-                    <a href="#">Consulted admitting is power acuteness. </a>
-                  </h4>
-                  <a class="btn circle btn-theme border btn-sm" href="#"
-                    >Read More <i class="fas fa-long-arrow-alt-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="single-item col-lg-4 col-md-6">
-              <div class="item wow fadeInUp" data-wow-delay="600ms">
-                <div class="thumb">
-                  <a href="#"
-                    ><img src="assets/img/800x600.png" alt="Thumb"
-                  /></a>
-                </div>
-                <div class="info">
-                  <div class="tags">
-                    <a href="#">Performance</a>
-                    <a href="#">High</a>
-                  </div>
-                  <div class="meta">
-                    <ul>
-                      <li><i class="fas fa-calendar-alt"></i> 05 Dec, 2020</li>
-                      <li>By <a href="#">Park Lee</a></li>
-                    </ul>
-                  </div>
-                  <h4>
-                    <a href="#">Unsatiable entreaties may collecting Power.</a>
-                  </h4>
-                  <a class="btn circle btn-theme border btn-sm" href="#"
-                    >Read More <i class="fas fa-long-arrow-alt-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="single-item col-lg-4 col-md-6">
-              <div class="item wow fadeInUp" data-wow-delay="600ms">
-                <div class="thumb">
-                  <a href="#"
-                    ><img src="assets/img/800x600.png" alt="Thumb"
-                  /></a>
-                </div>
-                <div class="info">
-                  <div class="tags">
-                    <a href="#">Affiliate</a>
-                    <a href="#">Process</a>
-                  </div>
-                  <div class="meta">
-                    <ul>
-                      <li><i class="fas fa-calendar-alt"></i> 26 Sep, 2020</li>
-                      <li>By <a href="#">Park Lee</a></li>
-                    </ul>
-                  </div>
-                  <h4>
-                    <a href="#">Consulted admitting is power acuteness. </a>
-                  </h4>
-                  <a class="btn circle btn-theme border btn-sm" href="#"
-                    >Read More <i class="fas fa-long-arrow-alt-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End Single Item -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Blog Area -->
-
     <!-- Start Contact Area  
     ============================================= -->
-    <div id="contact" class="contact-us-area default-padding-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 address text-light">
-            <div class="address-items wow fadeInUp">
-              <div class="item">
-                <h4>Thông tin liên hệ:</h4>
-                <div class="info">
-                  <ul>
-                    <li>Fanpage: <span>fb.com/sailagency</span></li>
-                    <li>Messenger: <span>m.me/sailagency</span></li>
-                    <li>Telegram: <span>t.me/sailagency</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-8 contact-form wow fadeInLeft">
-            <h2><strong>Liên hệ với chúng tôi!</strong></h2>
-            <p>
-              Vui lòng gửi mọi yêu cầu, thắc mắc theo thông tin bên dưới, chúng
-              tôi sẽ liên lạc với bạn sớm nhất có thể
-            </p>
-            <form
-              action="assets/mail/contact.php"
-              method="POST"
-              class="contact-form"
-            >
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Tên"
-                      type="text"
-                    />
-                    <span class="alert-error"></span>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Email*"
-                      type="email"
-                    />
-                    <span class="alert-error"></span>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="Phone"
-                      type="text"
-                    />
-                    <span class="alert-error"></span>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group comments">
-                    <textarea
-                      class="form-control"
-                      id="comments"
-                      name="comments"
-                      placeholder="Câu hỏi của bạn? *"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <button type="submit" name="submit" id="submit">
-                    Gửi tin nhắn <i class="fa fa-paper-plane"></i>
-                  </button>
-                </div>
-                <!-- Alert Message -->
-                <div class="col-lg-12 alert-notification">
-                  <div id="message" class="alert-msg"></div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="contact-area"></div>
+    <script>
+      fetch("contact-area.html")
+        .then((response) => response.text())
+        .then(
+          (data) => (document.getElementById("contact-area").innerHTML = data)
+        );
+    </script>
     <!-- End Contact -->
 
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
-      <div class="svg-shape">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="gray"
-          preserveAspectRatio="none"
-          viewBox="0 0 1070 52"
-        >
-          <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z"></path>
-        </svg>
-      </div>
-      <div class="container">
-        <div class="f-items default-padding">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 item">
-              <div class="f-item about">
-                <img src="assets/img/logo-light.png" alt="Logo" />
-                <div class="address">
-                  <ul>
-                    <li>
-                      <div class="icon">
-                        <i class="flaticon-email"></i>
-                      </div>
-                      <div class="info">
-                        <h5>Email:</h5>
-                        <span>support@validtemplates.com</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <i class="flaticon-call"></i>
-                      </div>
-                      <div class="info">
-                        <h5>Phone:</h5>
-                        <span>+44-20-7328-4499</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 item">
-              <div class="f-item link">
-                <h4 class="widget-title">Company</h4>
-                <ul>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">About us</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog Page</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 item">
-              <div class="f-item link">
-                <h4 class="widget-title">Useful Link</h4>
-                <ul>
-                  <li>
-                    <a href="#">Career</a>
-                  </li>
-                  <li>
-                    <a href="#">Leadership</a>
-                  </li>
-                  <li>
-                    <a href="#">Strategy</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                  <li>
-                    <a href="#">History</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 item">
-              <div class="f-item recent-post">
-                <h4 class="widget-title">Latest News</h4>
-                <div class="item">
-                  <a href="#"
-                    >Delighted prevailed supported too not remainder perpetual
-                    who furnished.</a
-                  >
-                  <span
-                    ><i class="fas fa-calendar-alt"></i> 22 Aug, 2020 -
-                    <a href="#">Admin</a></span
-                  >
-                </div>
-                <div class="item">
-                  <a href="#"
-                    >Speaking trifling an to unpacked moderate debating learnin
-                    management.
-                  </a>
-                  <span
-                    ><i class="fas fa-calendar-alt"></i> 15 Nov, 2020 -
-                    <a href="#">User</a></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Start Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                Copyright &copy; 2024. Designed by <a href="#">Sail Agency</a>
-              </p>
-            </div>
-            <!-- <div class="col-md-6 text-right link">
-              <ul>
-                <li>
-                  <a href="#">Terms</a>
-                </li>
-                <li>
-                  <a href="#">Privacy</a>
-                </li>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-              </ul>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <!-- End Footer Bottom -->
-    </footer>
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks

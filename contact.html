@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- ========== Meta Tags ========== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Digilab - SEO & Digital Marketing Agency Template">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Digilab - SEO & Digital Marketing Agency Template"
+    />
 
     <!-- ========== Page Title ========== -->
     <title>Digilab - SEO & Digital Marketing Agency Template</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -24,7 +30,7 @@
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="assets/css/animate.css" rel="stylesheet" />
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
@@ -36,215 +42,72 @@
     <![endif]-->
 
     <!-- ========== Google Fonts ========== -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Preloader Start -->
     <div id="site-preloader" class="site-preloader">
-        <div class="loader-wrap">
-            <div class="ring">
-                <span></span>
-            </div>
-            <h2>Digilab</h2>
+      <div class="loader-wrap">
+        <div class="ring">
+          <span></span>
         </div>
+        <h2>Digilab</h2>
+      </div>
     </div>
     <!-- Preloader Ends -->
 
     <!-- Header 
     ============================================= -->
-    <header id="home">
+    <div id="menu"></div>
+    <script>
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("menu").innerHTML = data));
+    </script>
 
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-default navbar-sticky dark attr-border bootsnav">
-
-            <!-- Start Top Search -->
-            <div class="container">
-                <div class="row">
-                    <div class="top-search">
-                        <div class="input-group">
-                            <form action="#">
-                                <input type="text" name="text" class="form-control" placeholder="Search">
-                                <button type="submit">
-                                    <i class="ti-search"></i>
-                                </button>  
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Top Search -->
-
-            <div class="container">
-
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
-                    </ul>
-                </div>        
-                <!-- End Atribute Navigation -->
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo" alt="Logo">
-                    </a>
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="index.html">Home Version One</a></li>
-                                <li><a href="index-2.html">Home Version Two</a></li>
-                                <li><a href="index-3.html">Home Version Three</a></li>
-                                <li><a href="index-4.html">Home Version Four</a></li>
-                                <li><a href="index-5.html">Home Version Five</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Company</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="about-us.html">About Company</a></li>
-                                <li><a href="team.html">Meet Our Team</a></li>
-                                <li><a href="team-carousel.html">Team Carousel</a></li>
-                                <li><a href="contact.html">Get in Touch</a></li>
-                                <li><a href="process.html">Our Process</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="register.html">Register</a></li>
-                                <li><a href="404.html">Error Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services.html">Services Version One</a></li>
-                                <li><a href="services-2.html">Services Version Two</a></li>
-                                <li><a href="services-3.html">Services Version Three</a></li>
-                                <li><a href="services-4.html">Services Version Four</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="case-studies.html">Case Studies</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                                <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li>
-                                <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                                <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div>
-
-        </nav>
-        <!-- End Navigation -->
-
-    </header>
     <!-- End Header -->
 
     <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area bg-gradient text-center">
-        <!-- Fixed BG -->
-        <div class="fixed-bg" style="background-image: url(assets/img/shape/bg-4.png);"></div>
-        <!-- Fixed BG -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1>Contact Us</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li class="active">Contact</li>
-                    </ul>
-                </div>
-            </div>
+      <!-- Fixed BG -->
+      <div
+        class="fixed-bg"
+        style="background-image: url(assets/img/shape/bg-4.png)"
+      ></div>
+      <!-- Fixed BG -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <h1>Contact Us</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li><a href="#">Pages</a></li>
+              <li class="active">Contact</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <!-- End Breadcrumb -->
 
-
     <!-- Start Contact Area  
     ============================================= -->
-    <div id="contact" class="contact-us-area default-padding">
-        <div class="container">
-            <div class="row">
-  
-                <div class="col-lg-4 address text-light">
-                    <div class="address-items wow fadeInUp">
-                          <div class="item">
-                            <h4>Thông tin liên hệ:                       </h4>
-                            <div class="info">
-                                <ul>
-                                    <li>Fanpage: <span>fb.com/sailagency</span></li>
-                                    <li>Messenger: <span>m.me/sailagency</span></li>
-                                    <li>Telegram: <span>t.me/sailagency</span></li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="col-lg-8 contact-form wow fadeInLeft">
-                    <h2><strong>Liên hệ với chúng tôi!</strong></h2>
-                    <p>Vui lòng gửi mọi yêu cầu, thắc mắc theo thông tin bên dưới, chúng tôi sẽ liên lạc với bạn sớm nhất có thể </p>
-                    <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Tên" type="text">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group comments">
-                                    <textarea class="form-control" id="comments" name="comments" placeholder="Câu hỏi của bạn? *"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="submit" name="submit" id="submit">
-                                    Gửi tin nhắn <i class="fa fa-paper-plane"></i>
-                                </button>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-lg-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                
-            </div>
-        </div>
+    <div class="contact-us-area default-padding">
+      <div id="contact-area"></div>
+      <script>
+        fetch("contact-area.html")
+          .then((response) => response.text())
+          .then(
+            (data) => (document.getElementById("contact-area").innerHTML = data)
+          );
+      </script>
     </div>
     <!-- End Contact -->
 
@@ -259,125 +122,12 @@
 
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
-        <div class="container">
-            <div class="f-items default-padding">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
-                            <div class="address">
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="flaticon-email"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Email:</h5>
-                                            <span>support@validtemplates.com</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="flaticon-call"></i>
-                                        </div>
-                                        <div class="info">
-                                            <h5>Phone:</h5>
-                                            <span>+44-20-7328-4499</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Company</h4>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Compnay History</a>
-                                </li>
-                                <li>
-                                    <a href="#">Features</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog Page</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Useful Link</h4>
-                            <ul>
-                                <li>
-                                    <a href="#">Career</a>
-                                </li>
-                                <li>
-                                    <a href="#">Leadership</a>
-                                </li>
-                                <li>
-                                    <a href="#">Strategy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">History</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="f-item recent-post">
-                            <h4 class="widget-title">Latest News</h4>
-                            <div class="item">
-                                <a href="#">Delighted prevailed supported too not remainder perpetual who furnished.</a>
-                                <span><i class="fas fa-calendar-alt"></i> 22 Aug, 2020 -  <a href="#">Admin</a></span>
-                            </div>
-                            <div class="item">
-                                <a href="#">Speaking trifling an to unpacked moderate debating learnin management. </a>
-                                <span><i class="fas fa-calendar-alt"></i> 15 Nov, 2020 -  <a href="#">User</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Copyright &copy;  2020. Designed by <a href="#">validtemplatess</a></p>
-                    </div>
-                    <div class="col-md-6 text-right link">
-                        <ul>
-                            <li>
-                                <a href="#">Terms</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Support</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Bottom -->
-    </footer>
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
@@ -400,6 +150,5 @@
     <script src="assets/js/progresscircle.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-
-</body>
+  </body>
 </html>
