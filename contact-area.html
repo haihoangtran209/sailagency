@@ -25,8 +25,21 @@
           Vui lòng gửi mọi yêu cầu, thắc mắc theo thông tin bên dưới, chúng tôi
           sẽ liên lạc với bạn sớm nhất có thể
         </p>
+        <!-- 
+        <form action="https://formspree.io/f/mnnnvbjz" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form> -->
+
         <form
-          action="assets/mail/contact.php"
+          action="https://formspree.io/f/mnnnvbjz"
           method="POST"
           class="contact-form"
         >
@@ -51,6 +64,7 @@
                   name="email"
                   placeholder="Email*"
                   type="email"
+                  required
                 />
                 <span class="alert-error"></span>
               </div>
@@ -64,7 +78,7 @@
                   placeholder="Phone"
                   type="text"
                 />
-                <span class="alert-error"></span>
+                <span class="alert-error" id="emailError"></span>
               </div>
             </div>
             <div class="col-lg-12">
@@ -74,11 +88,13 @@
                   id="comments"
                   name="comments"
                   placeholder="Câu hỏi của bạn? *"
+                  required
                 ></textarea>
+                <span class="alert-error" id="commentsError"></span>
               </div>
             </div>
             <div class="col-lg-12">
-              <button type="submit" name="submit" id="submit">
+              <button type="submit" name="submitx" id="submitx">
                 Gửi tin nhắn <i class="fa fa-paper-plane"></i>
               </button>
             </div>

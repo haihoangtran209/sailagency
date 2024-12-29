@@ -131,7 +131,7 @@
               <li>
                 <a href="#">Trang chủ</a>
               </li>
-              <li class="dropdown">
+              <li>
                 <a
                   href="#thanh-lap-llc"
                   onclick="scrollToDiv(event, this.getAttribute('href'))"
@@ -654,6 +654,39 @@
         .then((data) => (document.getElementById("footer").innerHTML = data));
     </script>
     <!-- End Footer -->
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          let isValid = true;
+
+          // Clear previous error messages
+          document.getElementById("emailError").textContent = "";
+          document.getElementById("commentsError").textContent = "";
+
+          // Validate Email
+          const email = document.getElementById("email").value;
+          if (!email) {
+            document.getElementById("emailError").textContent =
+              "Vui lòng nhập thông tin";
+            isValid = false;
+          }
+
+          // Validate Comments
+          const comments = document.getElementById("comments").value;
+          if (!comments) {
+            document.getElementById("commentsError").textContent =
+              "Vui lòng nhập thông tin";
+            isValid = false;
+          }
+
+          // Prevent form submission if validation fails
+          if (!isValid) {
+            event.preventDefault();
+          }
+        });
+    </script>
 
     <!-- jQuery Frameworks
     ============================================= -->
